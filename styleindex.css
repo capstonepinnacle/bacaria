@@ -31,6 +31,7 @@
     display: inline-block;
     margin: 0 20px;
     position: relative;
+    padding: 50px; 
 }
 
 .navbar ul li a{
