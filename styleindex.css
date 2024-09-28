@@ -7,7 +7,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: url(bacariabackgroung.jpg);
+    background-image: url(2.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -18,10 +18,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .bacarialogo{
-    width: 210px;
+    width: 150px;
     cursor: pointer;
 }
 
@@ -42,7 +43,7 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #2559ca;
+    background: #5849df;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -59,8 +60,8 @@
     top: 45%;
     transform: translateY(-50%);
     text-align: center;
-    color: rgba(250, 244, 244, 0.801);
-    backdrop-filter: blur(2px);
+    color: rgba(23, 22, 22, 0.801);
+    backdrop-filter: blur(0px);
     border: 2px solid var(--primary-color);
     border-radius: 15px;
 
@@ -70,6 +71,13 @@
     font-size: 60px;
     margin-top: 80px; 
     font-family: 'Times New Roman', Times, serif;  
+    
+}
+
+.content h2{
+    font-size: 35px;
+    margin-top: 15px; 
+    font-family: 'Courier New', Courier, monospace;  
     
 }
 
@@ -97,7 +105,7 @@ button{
 }
 
 span{
-    background: #395be4;
+    background: rgb(63, 123, 188);
     height: 100%;
     width: 0;
     border-radius: 25px;

@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Outfit';
-    background-image: url(contactbackground.jpeg);
+    background-image: url(contactbackground.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -25,7 +25,7 @@ body{
 
 .contact-left-title h2{
     font-weight: 600;
-    color: #c5c9d3;
+    color: #45474a;
     font-size: 40px;
     margin-bottom:  5px;
     font-family: monospace;
@@ -35,7 +35,7 @@ body{
     border: none;
     width: 380px;
     height: 5px;
-    background-color: rgb(140, 217, 227);
+    background-color: rgb(230, 91, 91);
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -116,7 +116,7 @@ body{
 .navbar ul li a{
     font-family: monospace;
     text-decoration: none;
-    color: rgb(244, 242, 239);
+    color: rgb(18, 18, 18);
     text-transform: uppercase;
 }
 
@@ -124,7 +124,7 @@ body{
     content: '';
     height: 3px;
     width: 0;
-    background: aquamarine;
+    background: rgb(61, 66, 224);
     position: absolute;
     left: 0;
     bottom: 40px;
