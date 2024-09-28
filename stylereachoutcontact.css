@@ -1,0 +1,136 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit';
+    background-image: url(contactbackground.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.contact-container{ /* Gap Between Title and Logo */
+    height: 100vh;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: #c5c9d3;
+    font-size: 40px;
+    margin-bottom:  5px;
+    font-family: monospace;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 380px;
+    height: 5px;
+    background-color: rgb(140, 217, 227);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;padding: 25px;
+    font-weight: 500;
+    color: #bfc2cd;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top:  15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid cornflowerblue;
+}
+.contact-inputs::placeholder{
+    color: rgb(71, 188, 223);
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border-radius: 50px;
+    border: transparent;
+    background: linear-gradient(270deg,lightblue,pink);
+    cursor: pointer;
+}
+
+@media (max-width :800px) {
+    .navbar ul {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display:none;
+    }
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 ;
+    position: relative;
+    padding: 50px; 
+
+}
+
+.navbar ul li a{
+    font-family: monospace;
+    text-decoration: none;
+    color: rgb(244, 242, 239);
+    text-transform: uppercase;
+}
+
+.navbar ul li ::after  {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: aquamarine;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    transition: 0.5s;
+}
+
+.navbar ul li :hover::after {
+    width: 100%;
+}
