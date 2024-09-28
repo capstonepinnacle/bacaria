@@ -7,7 +7,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: url(bacariabackground.jpeg);
+    background-image: url(bacariaback\ ground.jpeg);
     background-size: cover;
     background-position: center;
 }
