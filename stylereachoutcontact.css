@@ -48,6 +48,7 @@ body{
     font-weight: 500;
     color: #bfc2cd;
     border-radius: 50px;
+    
 }
 
 .contact-left textarea{
@@ -58,6 +59,7 @@ body{
 
 .contact-inputs:focus{
     border: 2px solid cornflowerblue;
+    
 }
 .contact-inputs::placeholder{
     color: rgb(71, 188, 223);
@@ -74,6 +76,7 @@ body{
     border: transparent;
     background: linear-gradient(270deg,lightblue,pink);
     cursor: pointer;
+    
 }
 
 @media (max-width :800px) {
@@ -133,4 +136,185 @@ body{
 
 .navbar ul li :hover::after {
     width: 100%;
+}
+
+@media  screen and (max-width: 600px) {
+
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: url(contactbackground.jpg);
+        background-size:auto;
+        background-position: auto;
+        font-size: 10px;
+    }
+
+    .content h1{
+        font-size: 25px;
+        margin-top: 50px; 
+        font-family: 'Times New Roman', Times, serif;  
+        
+    }
+    
+    .content h2{
+        font-size: 30px;
+        margin-top: 15px; 
+        font-family: 'Courier New', Courier, monospace;  
+        
+    }
+    
+    .content p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .navbar{
+        display :none;
+    }
+
+    .sidebar{
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        right: 0;
+        height:auto; 
+        width: 50%; 
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-family: monospace;
+    }
+
+    .sidebar li{
+        width: 100%;
+        height: 10vh; /*Size Of each icons when the sidebar opened*/
+    }
+
+    .sidebar ul {
+        list-style: none;
+        height: 100vh; /*Size Of each icons when the sidebar opened*/
+    }
+
+    .sidebar a{
+        width: 100%;
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+
+    .sidebar a:hover  {
+        background: rgba(51, 77, 207, 0.267);
+        position:relative;
+        transition: 0.5s;
+       
+    }
+
+    .menu {
+        padding: 50px;
+        justify-content: end;
+        display: flex;
+        
+    }
+
+    .menu ul {
+        list-style: none;
+        
+    }
+
+    .white-link{
+        color: #2a2828;
+    }
+
+    span{
+        background: rgb(121, 170, 223);
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.35s;
+    }
+
+    .contact-container{ /* Gap Between Title and Logo */
+        height: 100vh;
+        display:flex;
+        justify-content: space-evenly;
+    }
+    
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        
+    }
+    
+    .contact-left-title h2{
+        font-weight: 600;
+        color: #45474a;
+        font-size: 30px;
+        margin-bottom:  5px;
+        font-family: monospace;
+        text-align: center;
+    }
+    
+    .contact-left-title hr{
+        border: none;
+        width: 300px;
+        height: 5px;
+        background-color: rgb(230, 91, 91);
+        border-radius: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .contact-inputs{
+        width: 300px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding: 25px;
+        font-weight: 500;
+        color: #bfc2cd;
+        border-radius: 50px;
+    }
+    
+    .contact-left textarea{
+        height: 140px;
+        padding-top:  15px;
+        border-radius: 20px;
+    }
+
+    .contact-left button{
+        border-radius: 70px;
+        height: 50px;
+        
+        
+    }
+
+    .contact-left button{
+        display: flex;
+        align-items: right;
+        padding: 30px 95px;
+        font-size: 16px;
+        color: rgba(28, 26, 26, 0.557);
+        gap: 10px;
+        border-radius: 70px;
+        border: transparent;
+        background: linear-gradient(270deg,pink,rgba(123, 45, 147, 0.696));
+        cursor: pointer;
+    }
+
+
 }

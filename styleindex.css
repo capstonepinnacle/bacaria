@@ -112,7 +112,7 @@ button{
 }
 
 span{
-    background: rgb(63, 123, 188);
+    background: rgb(121, 170, 223);
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -187,7 +187,7 @@ button:hover{
         width: 50%; 
         z-index: 999;
         background-color: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(10px);
         box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
         display: none;
         flex-direction: column;
