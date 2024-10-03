@@ -183,8 +183,8 @@ button:hover{
         position: fixed;
         top: 0;
         right: 0;
-        height: 100vh;
-        width: 65%;
+        height: 50vh;
+        width: 100%;
         z-index: 999;
         background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
@@ -237,7 +237,7 @@ button:hover{
     }
 
     span{
-        background: rgb(70, 136, 206);
+        background: rgb(121, 170, 223);
         height: 100%;
         width: 0;
         border-radius: 25px;
