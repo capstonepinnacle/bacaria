@@ -197,10 +197,12 @@ button:hover{
 
     .sidebar li{
         width: 100%;
+        height: auto;
     }
 
     .sidebar ul {
         list-style: none;
+        height: auto;
     }
 
     .sidebar a{
