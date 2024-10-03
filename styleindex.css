@@ -104,7 +104,7 @@ button{
     font-weight: bold;
     border: transparent;
     background: transparent;
-    color: #fff;
+    color: #2f2e2e89;
     cursor: pointer;
     font-size: medium;
     position: relative;
@@ -151,24 +151,24 @@ button:hover{
         background-image: url(bacariaback\ ground.jpeg);
         background-size:auto;
         background-position: auto;
-        font-size: 15;
+        font-size: 10px;
     }
 
-    h1{
-        font-size: 15px;
+    .content h1{
+        font-size: 25px;
         margin-top: 50px; 
         font-family: 'Times New Roman', Times, serif;  
         
     }
     
-     h2{
-        font-size: 20px;
+    .content h2{
+        font-size: 30px;
         margin-top: 15px; 
         font-family: 'Courier New', Courier, monospace;  
         
     }
     
-     p{
+    .content p{
         margin: 20px auto;
         font-weight: 100;
         line-height: 25px;
@@ -222,7 +222,8 @@ button:hover{
 
     .menu {
         padding: 100px;
-                display: flex;
+        justify-content: end;
+        display: flex;
         
     }
 
@@ -230,4 +231,23 @@ button:hover{
         list-style: none;
         
     }
+
+    .white-link{
+        color: #2a2828;
+    }
+
+    span{
+        background: rgb(70, 136, 206);
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.35s;
+    }
+
+    
+
 }
