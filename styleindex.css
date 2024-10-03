@@ -183,7 +183,7 @@ button:hover{
         position: fixed;
         top: 0;
         right: 0;
-        height:auto; /*Size Of each icons when the sidebar opened*/
+        height:auto; 
         width: 50%; 
         z-index: 999;
         background-color: rgba(255, 255, 255, 0.2);
@@ -197,12 +197,12 @@ button:hover{
 
     .sidebar li{
         width: 100%;
-        height: 10vh;
+        height: 10vh; /*Size Of each icons when the sidebar opened*/
     }
 
     .sidebar ul {
         list-style: none;
-        height: 100vh;
+        height: 100vh; /*Size Of each icons when the sidebar opened*/
     }
 
     .sidebar a{
