@@ -174,7 +174,8 @@ button:hover{
         margin: 20px auto;
         font-weight: 100;
         line-height: 25px;
-        font-size: 12px;
+        font-size: 13px;
+        color: #2a2828;
         font-family: 'Courier New', Courier, monospace;
     }
 
