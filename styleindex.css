@@ -103,12 +103,14 @@ button{
     border-radius: 25px;
     font-weight: bold;
     border: transparent;
-    background: transparent;
+    background: linear-gradient(200deg,pink,rgba(123, 45, 147, 0.696));
     color: #2f2e2e89;
     cursor: pointer;
     font-size: medium;
     position: relative;
     overflow: hidden;
+    box-shadow: 10px 10px 30px 5px rgba(32, 32, 32, 0.2);
+   
 }
 
 span{
@@ -132,7 +134,7 @@ button:hover{
 }
 
 .white-link{
-    color: #fff;
+    color: #625e5e;
 }
 
 .sidebar{
@@ -155,14 +157,14 @@ button:hover{
     }
 
     .content h1{
-        font-size: 25px;
+        font-size: 35px;
         margin-top: 50px; 
         font-family: 'Times New Roman', Times, serif;  
         
     }
     
     .content h2{
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 15px; 
         font-family: 'Courier New', Courier, monospace;  
         

@@ -17,9 +17,26 @@
    
             <ul>
                 <li><a href ="index.html">💼 Home</a></li>
-                <li><a href ="exploreblog.html">👶🏻 Our Students</a></li>
                 <li><a href ="exploreteachers.html">👩🏼‍🏫 Our Team</a></li>
                 <li><a href ="reachoutcontact.html">📲 Reach Out</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar">
+
+            <ul>
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="25px" fill="#EFEFEF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></a></li>
+                <li><a href ="index.html">💼 Home</a></li>
+                <li><a href ="exploreteachers.html">👩🏼‍🏫 Our Team</a></li>
+                <li><a href ="reachoutcontact.html">📲 Reach Out</a></li>
+               
+            </ul>
+
+        </div>
+
+        <div class ="menu"> 
+            <ul>
+                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#EFEFEF"><path d="M200-540q-33 0-56.5-23.5T120-620v-140q0-33 23.5-56.5T200-840h140q33 0 56.5 23.5T420-760v140q0 33-23.5 56.5T340-540H200Zm0 420q-33 0-56.5-23.5T120-200v-140q0-33 23.5-56.5T200-420h140q33 0 56.5 23.5T420-340v140q0 33-23.5 56.5T340-120H200Zm420-420q-33 0-56.5-23.5T540-620v-140q0-33 23.5-56.5T620-840h140q33 0 56.5 23.5T840-760v140q0 33-23.5 56.5T760-540H620Zm0 420q-33 0-56.5-23.5T540-200v-140q0-33 23.5-56.5T620-420h140q33 0 56.5 23.5T840-340v140q0 33-23.5 56.5T760-120H620Z"/></svg></a></li>
             </ul>
         </div>
     
@@ -41,7 +58,7 @@
                 </div>
 
                 <div class="blog-box-text">
-                    <strong>30+ Years Of Voyage</strong>
+                    <strong>30+Years Voyage</strong>
                     <p>Discover Bacar🌱a's sturdy management & achievements over the past 30+ years.</p>
                     <div class="blog-author-text">
                         <span>Sept 29, 2024</span>
@@ -52,7 +69,7 @@
         
 
             <!--2-->
-             <div class="blog-box">
+            <div class="blog-box">
             <div class="blog-box-img">
                 <img src="test.jpg" alt="blog img">
                 <a href="#" class="blog-img-link">
@@ -107,10 +124,45 @@
                 </div>
     
             </div>
+
+             <!--5-->
+             <div class="blog-box">
+                <div class="blog-box-img">
+                    <img src="test.jpg" alt="blog img">
+                    <a href="#" class="blog-img-link">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+    
+                <div class="blog-box-text">
+                    <strong>TEST5</strong>
+                    <p>Discover Bacar🌱a's sturdy management & achievements over the past 30+ years.</p>
+                    <div class="blog-author-text">
+                        <span>Sept 29, 2024</span>
+                    </div>
+                </div>
+    
+            </div>
+
+           
        
     </div> <!--Stop Upon This Line-->
 
  </section>
+
+ <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+
+
+</script>
 
 
 </body>

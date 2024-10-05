@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: poppins;
+    
 }
 
 a{
@@ -20,6 +20,7 @@ ul{
     align-items: center;
     padding: 50px 0px;
     background-color: antiquewhite;
+    font-family: poppins;
 }
 
 .blog-heading h3{
@@ -28,6 +29,7 @@ ul{
     font-weight: 800;
     text-transform: uppercase;
     line-height: 2.4rem;
+    font-family: poppins;
 }
 
 .blog-heading strong{
@@ -35,13 +37,15 @@ ul{
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.3px;
+    font-family: poppins;
+    
 }
 
 .blog-box-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .blog-box{
@@ -74,6 +78,7 @@ ul{
     object-fit: cover;
     object-position: center;
     transition: all ease 0.3s;
+    
 }
 
 .blog-img-link{
@@ -114,7 +119,7 @@ ul{
     display: flex;
     flex-direction: column;
     padding: 10px 5px 10px 10px;
-    color: rgb(77, 75, 75);
+    color: rgb(54, 52, 52);
     font-family: monospace;
     font-size: 0.9rem;
 }
@@ -135,7 +140,7 @@ ul{
     padding: 10px 5px 10px 10px;
     color: rgb(77, 75, 75);
     font-family: monospace;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 
 .blog-box:hover .blog-author-text span{
@@ -159,9 +164,8 @@ ul{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-   
-    
 }
+
 .navbar ul{
     flex-grow: 1;
     display: flex;
@@ -200,3 +204,121 @@ ul{
 .navbar ul li :hover::after {
     width: 100%;
 }
+
+.sidebar{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .banner{
+        background-image: url(studentbackground.jpeg);
+    }
+
+    .navbar{
+        display :none;
+    }
+
+    .sidebar{
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        right: 0;
+        height:auto; 
+        width: 50%; 
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-family: monospace;
+        font-size: 10px;
+    }
+
+    .sidebar li{
+        width: 100%;
+        height: 10vh; /*Size Of each icons when the sidebar opened*/
+    }
+
+    .sidebar ul {
+        list-style: none;
+        height: 100vh; /*Size Of each icons when the sidebar opened*/
+    }
+
+    .sidebar a{
+        width: 100%;
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+
+    .sidebar a:hover  {
+        background: rgba(51, 77, 207, 0.267);
+        position:relative;
+        transition: 0.5s;
+       
+    }
+
+    .menu {
+        padding: 50px;
+        justify-content: end;
+        display: flex;
+        padding-right: 35px;
+        
+    }
+
+    .menu ul {
+        list-style: none;
+        
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .blog-box-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        flex-direction: column; /* Make The blog Post to stack uppon each other! */
+    }
+
+    .blog-box-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog-box-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        padding-top: 20px;
+    }
+
+    .blog-img-link {
+        position: relative;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    
+
+}
+
+
