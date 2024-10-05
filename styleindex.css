@@ -190,8 +190,9 @@ button:hover{
         height:auto; 
         width: 50%; 
         z-index: 999;
-        background-color: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.2)!important;
+        backdrop-filter: blur(10px)!important;
+        -webkit-backdrop-filter: blur(10px)!important;
         box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
         display: none;
         flex-direction: column;
