@@ -311,10 +311,12 @@ ul{
     }
 
     .blog-img-link {
-        position: relative;
+        position: absolute;
         width: 100%;
         display: block;
         text-align: center;
+        background: transparent;
+        display: none;
     }
 
     
