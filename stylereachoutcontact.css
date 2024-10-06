@@ -14,6 +14,7 @@ body{
     height: 100vh;
     display:flex;
     justify-content: space-evenly;
+    padding-left: 100px;
 }
 
 .contact-left{
@@ -38,6 +39,7 @@ body{
     background-color: rgb(230, 91, 91);
     border-radius: 10px;
     margin-bottom: 20px;
+   
 }
 
 .contact-inputs{
@@ -77,6 +79,12 @@ body{
     background: linear-gradient(270deg,lightblue,pink);
     cursor: pointer;
     
+}
+
+.contact-right img{
+    width: 750px;
+    height: 500px;
+    padding-left: 50px;
 }
 
 @media (max-width :800px) {
@@ -259,7 +267,8 @@ body{
     .contact-container{ /* Gap Between Title and Logo */
         height: 100vh;
         display:flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        padding-right: 100px;
     }
     
     .contact-left{
@@ -325,6 +334,11 @@ body{
         background: linear-gradient(270deg,pink,rgba(123, 45, 147, 0.696));
         cursor: pointer;
     }
+
+    .contact-right img{
+        display: none;
+    }
+    
 
 
 }
