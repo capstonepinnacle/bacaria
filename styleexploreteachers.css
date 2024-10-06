@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: poppins;
+    
 }
 
 a{
@@ -20,6 +20,7 @@ ul{
     align-items: center;
     padding: 50px 0px;
     background-color: rgb(151, 202, 234);
+    font-family: poppins;
 }
 
 .blog-heading h3{
@@ -28,6 +29,7 @@ ul{
     font-weight: 800;
     text-transform: uppercase;
     line-height: 2.4rem;
+    font-family: poppins;
 }
 
 .blog-heading strong{
@@ -35,6 +37,7 @@ ul{
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.3px;
+    font-family: poppins;
 }
 
 .blog-box-container{
