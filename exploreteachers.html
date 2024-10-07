@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <label>
+    
     <div class="banner">
         <div class="navbar">
    
@@ -22,10 +24,17 @@
             </ul>
         </div>
 
+        <input type = "checkbox">
+        <div class = "toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+
         <div class="sidebar">
 
             <ul>
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="25px" fill="#EFEFEF"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></a></li>
+               
                 <li><a href ="index.html">💼 Home</a></li>
                 <li><a href ="exploreblog.html">👶🏻 Our Students</a></li>
                 <li><a href ="reachoutcontact.html">📲 Reach Out</a></li>
@@ -34,12 +43,7 @@
 
         </div>
 
-        <div class ="menu"> 
-            <ul>
-                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#EFEFEF"><path d="M200-540q-33 0-56.5-23.5T120-620v-140q0-33 23.5-56.5T200-840h140q33 0 56.5 23.5T420-760v140q0 33-23.5 56.5T340-540H200Zm0 420q-33 0-56.5-23.5T120-200v-140q0-33 23.5-56.5T200-420h140q33 0 56.5 23.5T420-340v140q0 33-23.5 56.5T340-120H200Zm420-420q-33 0-56.5-23.5T540-620v-140q0-33 23.5-56.5T620-840h140q33 0 56.5 23.5T840-760v140q0 33-23.5 56.5T760-540H620Zm0 420q-33 0-56.5-23.5T540-200v-140q0-33 23.5-56.5T620-420h140q33 0 56.5 23.5T840-340v140q0 33-23.5 56.5T760-120H620Z"/></svg></a></li>
-            </ul>
-        </div>
-
+    
     
     <section id="blog">
         <div class="blog-heading">
@@ -131,23 +135,7 @@
  </section>
 
 
-</section>
 
-<script>
-   function showSidebar(){
-       const sidebar = document.querySelector('.sidebar')
-       sidebar.style.display = 'flex'
-   }
-
-   function hideSidebar(){
-       const sidebar = document.querySelector('.sidebar')
-       sidebar.style.display = 'none'
-   }
-
-
-</script>
-
-
-
+</label>
 </body>
 </html>

@@ -15,6 +15,7 @@ body{
     display:flex;
     justify-content: space-evenly;
     padding-left: 100px;
+   
 }
 
 .contact-left{
@@ -87,7 +88,17 @@ body{
     padding-left: 50px;
 }
 
+.toggle{
+    display: none;
+}
+
 @media (max-width :800px) {
+
+.toggle{
+    display: flex;
+}
+
+
     .navbar ul {
         flex-direction: column; 
         align-items: flex-start;
@@ -191,8 +202,9 @@ body{
     }
 
     .sidebar{
-        backdrop-filter: blur(10px);
-        position: fixed;
+        transform: translateX(-500px); /*Keep*/
+        transition: 1s ease-out;
+        position: absolute;
         top: 0;
         right: 0;
         height:auto; 
@@ -202,16 +214,16 @@ body{
         backdrop-filter: blur(10px)!important;
         -webkit-backdrop-filter: blur(10px)!important;
         box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        font-family: monospace;
     }
 
     .sidebar li{
         width: 100%;
         height: 10vh; /*Size Of each icons when the sidebar opened*/
+        list-style: none;
     }
 
     .sidebar ul {
@@ -219,14 +231,22 @@ body{
         height: 100vh; /*Size Of each icons when the sidebar opened*/
     }
 
-    .sidebar a{
+    .sidebar ul li a{ /*SideBar Wordings*/
         width: 100%;
         height: 100%;
-        padding: 0 30px;
+        padding: 70px 10px ;
         text-decoration: none;
-        display: flex;
+        display:flex;
         align-items: center;
         color: black;
+        transition: 0.2s ease-out;
+        font-family: monospace;
+        
+    }
+
+    .sidebar ul li a i{
+        width: 40;
+        text-align: center;
     }
 
     .sidebar a:hover  {
@@ -236,40 +256,16 @@ body{
        
     }
 
-    .menu {
-        padding: 50px;
-        justify-content: end;
-        display: flex;
-        
-    }
-
-    .menu ul {
-        list-style: none;
-        
-    }
-
-    .white-link{
-        color: #2a2828;
-    }
-
-    span{
-        background: rgb(121, 170, 223);
-        height: 100%;
-        width: 0;
-        border-radius: 25px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: -1;
-        transition: 0.35s;
-    }
 
     .contact-container{ /* Gap Between Title and Logo */
         height: 100vh;
         display:flex;
         justify-content: center;
         padding-right: 100px;
+        padding-top: 120px;
     }
+
+    
     
     .contact-left{
         display: flex;
@@ -310,7 +306,7 @@ body{
     }
     
     .contact-left textarea{
-        height: 140px;
+        height: 90px;
         padding-top:  15px;
         border-radius: 20px;
     }
@@ -338,6 +334,83 @@ body{
     .contact-right img{
         display: none;
     }
+
+    /*Animated Side Bar*/
+    input{
+        display: none;
+        visibility: hidden;
+        -webkit-appearance: none;
+    }
+
+    .toggle{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 50px;
+        left: 35px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff00;
+        z-index: 1;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+
+    .toggle .common{
+        position: absolute;
+        height: 2px;
+        width: 20px;
+        background-color: #a025ab;
+        border-radius: 50px;
+        transition: 0.3s ease;
+    }
+    
+
+    /*Menu Logo Editing START*/
+    .toggle .top_line{
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .toggle .middle_line{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .toggle .bottom_line{
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    /*Menu Logo Editing END*/
+
+    input:checked ~ .toggle .top_line{
+        left: 2px;
+        top: 14px;
+        width: 25px;
+        transform: rotate(45deg);
+
+    }
+    input:checked ~ .toggle .middle_line{
+        opacity: 0;
+        display: none;
+        transform: translateX(20px);
+        
+    }
+
+    input:checked ~ .toggle .bottom_line{
+        left: 2px;
+        top: 14px;
+        width: 25px;
+        transform: rotate(-45deg);
+        
+    }
+
+    input:checked ~.sidebar {
+        transform: translate(-215px); /*SHOW*/
+    }
+
     
 
 

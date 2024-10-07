@@ -42,10 +42,12 @@ ul{
 }
 
 .blog-box-container{
-    display: flex;
+    display: grid; /*Makes Display as Grid instead of flex*/
+    grid-template-columns: repeat(3, 1fr);/*3 in a row, starting from 4 move down*/
     justify-content: center;
     align-items: center;
     margin-top: 35px;
+    
 }
 
 .blog-box{
@@ -59,7 +61,7 @@ ul{
 }
 
 .blog-box:hover{
-    background-color: #ffffff;
+    background-color: #ffffffa0;
     box-shadow: 16px 20px 50px rgba(0, 0, 0, 0.12);
 }
 
@@ -209,9 +211,6 @@ ul{
     display: none;
 }
 
-.menu{
-    display: none;
-}
 
 @media only screen and (max-width: 900px) {
 
@@ -228,6 +227,8 @@ ul{
     }
 
     .sidebar{
+        transform: translateX(-500px); /*Keep*/
+        transition: 1s ease-out;
         backdrop-filter: blur(10px);
         position: fixed;
         top: 0;
@@ -239,7 +240,7 @@ ul{
         backdrop-filter: blur(10px)!important;
         -webkit-backdrop-filter: blur(10px)!important;
         box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
@@ -255,6 +256,17 @@ ul{
     .sidebar ul {
         list-style: none;
         height: 100vh; /*Size Of each icons when the sidebar opened*/
+    }
+
+    .sidebar ul li a{
+        width: 100%;
+        height: 100%;
+        padding: 70px 55px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+        transition: 0.2s ease-out;
     }
 
     .sidebar a{
@@ -293,6 +305,7 @@ ul{
     }
 
     .blog-box-container {
+        display: flex;
         max-width: 100%;
         margin: 0 auto;
         padding: 0 15px;
@@ -321,8 +334,91 @@ ul{
         display: none;
     }
 
+    /*Animated Side Bar*/
+    input{
+        display: none;
+        visibility: hidden;
+        -webkit-appearance: none;
+    }
+
+    .toggle{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 15px;
+        left: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff00;
+        z-index: 1;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+
+    .toggle .common{
+        position: absolute;
+        height: 2px;
+        width: 20px;
+        background-color: #a025ab;
+        border-radius: 50px;
+        transition: 0.3s ease;
+    }
+    
+
+    /*Menu Logo Editing START*/
+    .toggle .top_line{
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .toggle .middle_line{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .toggle .bottom_line{
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    /*Menu Logo Editing END*/
+
+    input:checked ~ .toggle .top_line{
+        left: 2px;
+        top: 14px;
+        width: 25px;
+        transform: rotate(45deg);
+
+    }
+    input:checked ~ .toggle .middle_line{
+        opacity: 0;
+        display: none;
+        transform: translateX(20px);
+        
+    }
+
+    input:checked ~ .toggle .bottom_line{
+        left: 2px;
+        top: 14px;
+        width: 25px;
+        transform: rotate(-45deg);
+        
+    }
+
+    input:checked ~.sidebar {
+        transform: translate(-215px); /*SHOW*/
+    }
+
+    #blog{
+        background: linear-gradient(250deg,rgb(229, 177, 185),rgba(180, 54, 215, 0.667));
+        background-color: bisque;
+    }
+
     
 
 }
+
+
 
 
