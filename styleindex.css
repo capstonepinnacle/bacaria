@@ -328,7 +328,7 @@ button:hover{
     }
 
     input:checked ~.sidebar {
-        transform: translate(-200px);
+        transform: translate(-215px); /*SHOW*/
     }
 
     
