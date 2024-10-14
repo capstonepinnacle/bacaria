@@ -415,6 +415,18 @@ ul{
         background-color: bisque;
     }
 
+    .blog-box-text p{
+    
+        flex-direction: column;
+        padding: 10px 10px 15px 10px;
+        display:flex;
+        color:#161414bc
+        
+    }
+
+   
+    
+
     
 
 }
