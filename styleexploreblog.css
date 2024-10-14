@@ -424,6 +424,16 @@ ul{
         
     }
 
+    .blog-author-text span{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 5px 10px 10px;
+        color: rgb(234, 227, 227);
+        font-family:'Courier New', Courier, monospace;
+        font-size: 0.8rem;
+        
+    }
+
    
     
 
