@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+input[type ="checkbox"]{
+    display: none;
+   }
+
 body{
     font-family: 'Outfit';
     background-image: url(contactbackground.jpg);
